@@ -84,6 +84,7 @@ p {
 /* #region Logos and Header */
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -128,6 +129,8 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-item-inactive,
@@ -175,6 +178,8 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-item:hover,
@@ -188,13 +193,15 @@ p {
 .hero-section {
   text-align: center;
   padding: 188px 0;
+  margin: 0 auto;
+  max-width: 1440px;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
-  background-size: 1440рх;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -231,6 +238,8 @@ p {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   cursor: pointer;
 }
@@ -256,7 +265,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 8px;
 
   background: #f4f4fd;
   border: 1px solid #8e8f99;
@@ -368,6 +377,7 @@ p {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .portfolio-img {
+    display: flex;
   position: relative;
   overflow: hidden;
 }
@@ -384,13 +394,14 @@ p {
   height: 100%;
   background-color: #4d5ae5;
   position: absolute;
-  top: 100%;
+  transform: translateY(100%);
+  transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-card:hover .portfolio-overlay {
-  top: 0;
+    transform: translateY(0);
 }
 
 .portfolio-card-text-content {
