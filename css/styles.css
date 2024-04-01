@@ -342,10 +342,13 @@ p {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.pers-soc-circle:hover,
-.pers-soc-circle:focus {
+.pers-soc-circle:hover {
   background-color: #404bbf;
 }
+
+.pers-soc-circle:focus {
+    background-color: #404bbf;
+  }
 
 .pers-soc-ic {
   fill: #f4f4fd;
@@ -496,10 +499,13 @@ footer .foot-sec-one {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.foot-soc-circle:hover,
-.foot-soc-circle:focus {
+.foot-soc-circle:hover {
   background-color: #31d0aa;
 }
+
+.foot-soc-circle:focus {
+    background-color: #31d0aa;
+  }
 
 .foot-soc-ic {
   fill: #f4f4fd;
