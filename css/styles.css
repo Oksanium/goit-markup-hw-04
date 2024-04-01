@@ -344,7 +344,7 @@ p {
 
 .pers-soc-circle:hover,
 .pers-soc-circle:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 .pers-soc-ic {
@@ -453,13 +453,20 @@ footer .foot-sec-one {
   color: #f4f4fd;
 }
 
-.footer-text,
-.foot-soc-media {
+.footer-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+
+.foot-soc-media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
 }
 
 /* .foot-soc-sec {
@@ -470,10 +477,10 @@ footer .foot-sec-one {
   margin-bottom: 16px;
 }
 
-.foot-soc-wrapper {
+.foot-soc-ul {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
 }
 
 .foot-soc-circle {
